@@ -1,3 +1,4 @@
+![Logo](/GeometryGuru/asset/logo.webp)
 # 🚀 GeometryGuru
 
 Arifmetik amallarni bajaruvchi dastur
