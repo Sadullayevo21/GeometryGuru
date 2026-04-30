@@ -1,22 +1,13 @@
 ![Logo](asset/logo.webp)
-# 🚀 GeometryGuru
+# 📐 Geometry Guru
 
-Arifmetik amallarni bajaruvchi dastur
+**Geometry Guru** — bu foydalanuvchilarga turli geometrik shakllarning perimetrini oddiy matematik amallar (qo'shish, ko'paytirish) orqali hisoblashda yordam beradigan dastur.
 
-## ✨ Imkoniyatlar
-Dastur quyidagi asosiy arifmetik amallarni bajara oladi:
+### ✨ Imkoniyatlar:
+*   **Kvadrat:** Tomonini 4 ga ko'paytirish orqali.
+*   **To'g'ri to'rtburchak:** Uzunlik va kenglikni qo'shib, 2 ga ko'paytirish orqali.
+*   **Uchburchak:** Barcha tomonlarini qo'shish orqali.
 
-* ➕ **Qo'shish:** Ikki sonning yig'indisini hisoblaydi.
-* ➖ **Ayirish:** Birinchi sondan ikkinchi sonni ayiradi.
-* ✖️ **Ko'paytirish:** Sonlarni bir-biriga ko'paytiradi.
-* ➗ **Bo'lish:** Bo'linmani hisoblaydi (Nolga bo'lish xatoligi tekshirilgan).
-
-## 🛠 Texnologiyalar
-* **Til:** C#
-* **Platforma:** .NET Core 
-* **Muhit:** Visual Studio Code
-
-## 🚀 Ishga tushirish
-Dasturni terminalda ishga tushirish uchun quyidagi buyruqni yozing:
-```bash
-dotnet run
+### 🛠 Texnologiyalar:
+*   **Til:** C# 
+*   **Format:** Markdown
