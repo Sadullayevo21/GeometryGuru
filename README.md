@@ -9,6 +9,7 @@
 *   **Uchburchak:** Barcha tomonlarini qo'shish orqali.
 
 ### 🚀 Ishlash jarayoni
+
 ![Ishlash jarayoni](/GeometryGuru/asset/Animation.gif)
 
 ### 🛠 Texnologiyalar:
