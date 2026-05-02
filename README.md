@@ -10,7 +10,7 @@
 
 ### 🚀 Ishlash jarayoni
 
-![Ishlash jarayoni](/GeometryGuru/asset/Animation.gif)
+![Ishlash jarayoni](asset/Animation.gif)
 
 ### 🛠 Texnologiyalar:
 *   **Til:** C# 
