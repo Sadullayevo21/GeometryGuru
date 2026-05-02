@@ -49,15 +49,3 @@ if (asosiyTanlov == "1")
             break;
     }
 }
-else if (asosiyTanlov == "2")
-{
-    Console.WriteLine("Geometrik shakllar bo'limi hali tayyor emas...");
-}
-else if (asosiyTanlov == "3")
-{
-    Console.WriteLine("Dasturdan chiqilmoqda. Xayr!");
-}
-else
-{
-    Console.WriteLine("Noto'g'ri buyruq!");
-}
