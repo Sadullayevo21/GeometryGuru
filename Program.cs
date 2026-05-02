@@ -10,7 +10,7 @@ Console.Write("Tanlovni kiriting: ");
                 
 string asosiyTanlov = Console.ReadLine();
 
-if (asosiyTanlov == "1")
+switch (asosiyTanlov == "1")
 {
     Console.WriteLine("Arifmetik amallar menyusi");
     Console.WriteLine("1. Qo'shish (+)");
