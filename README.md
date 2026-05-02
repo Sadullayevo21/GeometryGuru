@@ -10,7 +10,7 @@
 
 ### 🚀 Ishlash jarayoni
 
-![Ishlash jarayoni](asset/Animation.gif)
+![Ishlash jarayoni](/asset/gif.gif)
 
 ### 🛠 Texnologiyalar:
 *   **Til:** C# 
