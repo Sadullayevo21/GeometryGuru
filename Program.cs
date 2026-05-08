@@ -1,51 +1,92 @@
-﻿ Console.WriteLine("GeometryGuru ga xush kelibsiz");
+﻿Console.WriteLine("=== Geometry Guru ===");
 
- Console.WriteLine("Bu dasturda siz ikki xil amalni bajarishingiz mumkin: ");
+bool davomEtish = true;
 
-Console.WriteLine("Asosiy Menyu:");
-Console.WriteLine("1. Arifmetik amallar");
-Console.WriteLine("2. Geometrik shakllar (Kvadrat, Uchburchak, Romb)");
-Console.WriteLine("3. Chiqish");
-Console.Write("Tanlovni kiriting: ");
-                
-string asosiyTanlov = Console.ReadLine();
-
-switch (asosiyTanlov == "1")
+while (davomEtish)
 {
-    Console.WriteLine("Arifmetik amallar menyusi");
-    Console.WriteLine("1. Qo'shish (+)");
-    Console.WriteLine("2. Ayirish (-)");
-    Console.WriteLine("3. Ko'paytirish (*)");
-    Console.WriteLine("4. Bo'lish (/)");
-    Console.Write("Amalni tanlang: ");
-    
-    string arifmetikTanlov = Console.ReadLine();
+    Console.WriteLine("\nAsosiy Menyu:");
+    Console.WriteLine("1. Arifmetik amallar");
+    Console.WriteLine("2. Geometrik shakllar");
+    Console.WriteLine("3. Chiqish");
+    Console.Write("Tanlovni kiriting: ");
 
-    Console.Write("Birinchi sonni kiriting: ");
-    double son1 = Convert.ToDouble(Console.ReadLine());
+            string asosiyTanlov = Console.ReadLine();
 
-    Console.Write("Ikkinchi sonni kiriting: ");
-    double son2 = Convert.ToDouble(Console.ReadLine());
+            switch (asosiyTanlov)
+            {
+                case "1":
+                    Console.WriteLine("\n--- Arifmetik Bo'lim ---");
+                    
+                    Console.Write("Amalni tanlang (+, -, *, /): ");
+                    string amal = Console.ReadLine();
 
-    switch (arifmetikTanlov)
-    {
-        case "1":
-            Console.WriteLine($"Natija: {son1} + {son2} = {son1 + son2}");
-            break;
-        case "2":
-            Console.WriteLine($"Natija: {son1} - {son2} = {son1 - son2}");
-            break;
-        case "3":
-            Console.WriteLine($"Natija: {son1} * {son2} = {son1 * son2}");
-            break;
-        case "4":
-            if (son2 != 0)
-                Console.WriteLine($"Natija: {son1} / {son2} = {son1 / son2}");
-            else
-                Console.WriteLine("Xatolik: Sonni nolga bo'lish mumkin emas!");
-            break;
-        default:
-            Console.WriteLine("Noto'g'ri tanlov kiritildi.");
-            break;
-    }
-}
+                    Console.Write("1-sonni kiriting: ");
+                    double a = Convert.ToDouble(Console.ReadLine());
+                    Console.Write("2-sonni kiriting: ");
+                    double b = Convert.ToDouble(Console.ReadLine());
+
+                    switch (amal)
+                    {
+                        case "+":
+                            Console.WriteLine($"Natija: {a} + {b} = {a + b}");
+                            break;
+                        case "-":
+                            Console.WriteLine($"Natija: {a} - {b} = {a - b}");
+                            break;
+                        case "*":
+                            Console.WriteLine($"Natija: {a} * {b} = {a * b}");
+                            break;
+                        case "/":
+                            if (b == 0)
+                                Console.WriteLine("Xato: 0 ga bo'lish mumkin emas!");
+                            else
+                                Console.WriteLine($"Natija: {a} / {b} = {a / b}");
+                            break;
+                        default:
+                            Console.WriteLine("Bunday amal mavjud emas.");
+                            break;
+                    }
+                    break;
+
+                case "2":
+                    Console.WriteLine("\n--- Geometriya Bo'limi ---");
+                    Console.WriteLine("a. Kvadrat yuzi");
+                    Console.WriteLine("b. Uchburchak yuzi");
+                    Console.WriteLine("c. Romb yuzi");
+                    Console.Write("Tanlang: ");
+                    string geometrikTanlov = Console.ReadLine();
+
+                    switch (geometrikTanlov)
+                    {
+                        case "a":
+                            Console.Write("Tomoni: ");
+                            double t = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine($"Kvadrat yuzi: {t * t}");
+                            break;
+                        case "b":
+                            Console.Write("Asosi: ");
+                            double asos = Convert.ToDouble(Console.ReadLine());
+                            Console.Write("Balandligi: ");
+                            double balandlik = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine($"Uchburchak yuzi: {(asos * balandlik) / 2}");
+                            break;
+                        case "c":
+                            Console.Write("Diagonal 1: ");
+                            double d1 = Convert.ToDouble(Console.ReadLine());
+                            Console.Write("Diagonal 2: ");
+                            double d2 = Convert.ToDouble(Console.ReadLine());
+                            Console.WriteLine($"Romb yuzi: {(d1 * d2) / 2}");
+                            break;
+                    }
+                    break;
+
+                case "3":
+                    davomEtish = false;
+                    Console.WriteLine("Dastur to'xtatildi. Xayr!");
+                    break;
+
+                default:
+                    Console.WriteLine("Noto'g'ri raqam kiritildi!");
+                    break;
+            }
+        }
