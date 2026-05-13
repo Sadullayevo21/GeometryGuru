@@ -43,9 +43,7 @@ do
 
 } while (dasturIshlayapti);
 
-// --- METODLAR ---
-
-void ArifmetikAmallar()
+static void ArifmetikAmallar()
 {
     Console.WriteLine("\n--- Arifmetik va Daraja Bo'limi ---");
     Console.Write("Amalni tanlang (+, -, *, /, ^): ");
@@ -78,7 +76,7 @@ void ArifmetikAmallar()
     }
 }
 
-void GeometrikShakllar()
+static void GeometrikShakllar()
 {
     Console.WriteLine("\n--- Geometriya Bo'limi ---");
     Console.WriteLine("a. Kvadrat yuzi\nb. Uchburchak yuzi\nc. Romb yuzi");
@@ -109,7 +107,7 @@ void GeometrikShakllar()
     }
 }
 
-void TubSonlarYigindisi()
+static void TubSonlarYigindisi()
 {
     Console.WriteLine("\n--- Tub sonlar yig'indisi ---");
     Console.Write("N sonini kiriting: ");
